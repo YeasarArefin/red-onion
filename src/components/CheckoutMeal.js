@@ -5,12 +5,9 @@ const CheckoutMeal = ({ item, handleDelete }) => {
 
     const { id, name, img, price, quantity, type } = item;
 
-
-    // console.log(meal);
-
     return (
 
-        <div className="">
+        <div>
 
             <div className="grid grid-cols-1">
 
