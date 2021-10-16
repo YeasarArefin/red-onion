@@ -1,0 +1,7 @@
+.login-img{
+    background: url(../assets/bannerbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @apply h-screen;
+}
