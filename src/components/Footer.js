@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/logo.png';
-import { a } from 'react-router-dom';
 
 const Footer = () => {
     return (
