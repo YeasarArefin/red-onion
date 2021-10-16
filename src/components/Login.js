@@ -4,11 +4,10 @@ import { FcGoogle } from 'react-icons/fc';
 import '../styles/login.css';
 import logo from '../assets/logo2.png';
 import useFirebase from '../hooks/useFirebase';
-import Nav from './Nav';
 
 const Login = () => {
 
-    const { singInWithGoogle, user } = useFirebase();
+    const { singInWithGoogle } = useFirebase();
 
     return (
 

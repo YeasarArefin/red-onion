@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useOrder } from '../context/OrderProvider';
 import useAuth from '../hooks/useAuth';
 import CheckoutMeal from './CheckoutMeal';
@@ -28,7 +28,7 @@ const Checkout = () => {
 
             <div className="container">
 
-                <div className="wrapper grid grid-cols-2 h-screen items-center gap-x-20">
+                <div className="wrapper grid grid-cols-1 md:grid-cols-2 h-screen items-center gap-x-20 pt-20 lg:pt-0">
 
                     <div className="flex flex-col">
 
@@ -47,7 +47,7 @@ const Checkout = () => {
 
                         {
                             meal.length ? (
-                                meal.map(item => <CheckoutMeal item={item} meal={meal} handleDelete={handleDelete} />)
+                                meal.map(item => <CheckoutMeal item={item} key={item.id} meal={meal} handleDelete={handleDelete} />)
                             ) : (
 
                                 <button onClick={() => history.push("/")} className="btn text flex items-center justify-center text-2xl gap-x-3">Add An Item <BsCart3 className="text-3xl" /></button>

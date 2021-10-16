@@ -13,7 +13,6 @@
 }
 
 .tab-btn{
-  /* background-color: #f91944; */
   @apply px-8 py-2 focus:ring-4 focus:ring-red-400 rounded-full focus:bg-red-600 focus:text-white ease-in-out transition duration-300  text-gray-800
 }
 

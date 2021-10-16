@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai';
 import { BsCart2 } from 'react-icons/bs';
-import { Link, useHistory } from 'react-router-dom';
+import { MdOutlineArrowBackIos } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 import { useOrder } from '../context/OrderProvider';
 
 const OrderMeal = ({ meal }) => {
@@ -33,9 +34,9 @@ const OrderMeal = ({ meal }) => {
 
             <div className="container ">
 
-                <div className="wrapper">
+                <div className="wrapper pt-20 lg:pt-0">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 items-center h-screen">
+                    <div className="grid grid-cols-1  md:grid-cols-2 items-center h-screen">
 
                         <div className="text">
 
@@ -62,9 +63,15 @@ const OrderMeal = ({ meal }) => {
 
                             </div>
 
-                            <Link to="/checkout">
-                                <button onClick={() => handleClick(meal, num)} className="btn flex items-center gap-x-3"><BsCart2 />Add To Cart</button>
-                            </Link>
+                            <div className="flex items-center gap-x-5">
+                                <Link to="/checkout">
+                                    <button onClick={() => handleClick(meal, num)} className="btn flex items-center transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 gap-x-3"><BsCart2 />Add To Cart</button>
+                                </Link>
+
+                                <Link to="/">
+                                    <button className="px-10 py-3  rounded-full border border-red-500 flex items-center gap-x-3"><MdOutlineArrowBackIos />Back</button>
+                                </Link>
+                            </div>
 
                         </div>
 

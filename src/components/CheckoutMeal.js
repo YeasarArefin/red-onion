@@ -11,7 +11,7 @@ const CheckoutMeal = ({ item, handleDelete }) => {
 
             <div className="grid grid-cols-1">
 
-                <div className="flex justify-between p-3 rounded-2xl transition duration-500 hover:shadow-xl">
+                <div className="flex justify-between p-3 rounded-2xl transition duration-500 border hover:shadow-xl">
 
                     <div className="flex gap-x-10">
                         <div>
@@ -26,6 +26,7 @@ const CheckoutMeal = ({ item, handleDelete }) => {
                     </div>
 
                     <div className="flex items-center gap-x-5">
+
                         <h1>{quantity} items</h1>
 
                         <button onClick={() => handleDelete(id)} className="symbol-btn" >

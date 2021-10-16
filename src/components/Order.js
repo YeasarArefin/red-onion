@@ -18,7 +18,7 @@ const Order = () => {
         <div>
 
             {
-                meals.filter(meal => meal.id == id).map(meal => <OrderMeal meal={meal} />)
+                meals.filter(meal => meal.id === id).map(meal => <OrderMeal key={meal.id} meal={meal} />)
             }
 
         </div>

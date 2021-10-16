@@ -35,7 +35,7 @@ const Foods = () => {
             <div className="grid grid-cols-1 gap-x-20 gap-y-20 lg:grid-cols-3 lg:gap-x-20 lg:gap-y-20 my-20">
 
                 {
-                    meals.filter(meal => meal.type == tab).map(meal => <Meal meal={meal} />)
+                    meals.filter(meal => meal.type === tab).map(meal => <Meal key={meal.id} meal={meal} />)
                 }
 
             </div>

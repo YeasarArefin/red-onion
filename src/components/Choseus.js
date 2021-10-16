@@ -10,7 +10,7 @@ const Choseus = () => {
     return (
         <div>
 
-            <div className="container mb-10">
+            <div className="container mb-40">
 
                 <div className="wrapper">
 

@@ -17,12 +17,11 @@ function App() {
 	return (
 
 		<>
+			<Router>
 
-			<AuthProvider>
+				<AuthProvider>
 
-				<OrderProvider>
-
-					<Router>
+					<OrderProvider>
 
 						<Nav />
 
@@ -53,12 +52,13 @@ function App() {
 
 						</Switch>
 
-					</Router>
 
-				</OrderProvider>
 
-			</AuthProvider>
+					</OrderProvider>
 
+				</AuthProvider>
+
+			</Router>
 		</>
 	);
 }

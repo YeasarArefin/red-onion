@@ -24,8 +24,6 @@ const OrderProvider = ({ children }) => {
 
     const value = { handleClick, meal, setMeal };
 
-    console.log(meal);
-
     return (
 
         <MealContext.Provider value={value}>
