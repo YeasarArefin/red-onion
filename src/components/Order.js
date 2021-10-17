@@ -22,7 +22,7 @@ const Order = () => {
             <div>
 
                 {
-                    meals.filter(meal => meal.id == id).map(meal => <OrderMeal meal={meal} />)
+                    meals.filter(meal => meal.id == id).map(meal => <OrderMeal meal={meal} key={meal.id} />)
                 }
 
             </div>

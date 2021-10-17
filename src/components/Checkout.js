@@ -34,8 +34,8 @@ const Checkout = () => {
 
                         <h1 className="mb-5 text-3xl">Edit Delivary Details</h1>
                         <div className="mb-5 border-b-2 border-gray-700"></div>
-                        <input type="text" className="input2 mb-5" value={user.displayName} placeholder="Name" />
-                        <input type="text" className="input2 mb-5" value={user.email} placeholder="Contact" />
+                        <input type="text" className="input2 mb-5" defaultValue={user.displayName} placeholder="Name" />
+                        <input type="text" className="input2 mb-5" defaultValue={user.email} placeholder="Contact" />
                         <input type="text" className="input2 mb-5" placeholder="Adress" />
                         <input type="text" className="input2 mb-5" placeholder="Flat,Flour" />
                         <input type="text" className="input2 mb-5" placeholder="Add Delevety Instructions" />
