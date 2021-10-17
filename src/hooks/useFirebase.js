@@ -18,7 +18,7 @@ const useFirebase = () => {
         signInWithPopup(auth, provider)
             .then(result => {
                 setUser(result.user);
-                history.push('/');
+                history.push('/checkout');
             })
             .catch(error => {
                 console.log(error.message);

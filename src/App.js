@@ -39,9 +39,9 @@ function App() {
 								<Login />
 							</Route>
 
-							<PrivateRoute exact path="/order/:id">
+							<Route exact path="/order/:id">
 								<Order />
-							</PrivateRoute>
+							</Route>
 
 							<PrivateRoute exact path="/checkout">
 								<Checkout />
