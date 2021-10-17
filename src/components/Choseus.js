@@ -7,8 +7,10 @@ import logo2 from '../assets/ICON/Group 245.png';
 import logo3 from '../assets/ICON/Group 1133.png';
 
 const Choseus = () => {
+
     return (
-        <div>
+
+        <>
 
             <div className="container mb-40">
 
@@ -80,7 +82,8 @@ const Choseus = () => {
 
             </div>
 
-        </div>
+        </>
+
     );
 };
 

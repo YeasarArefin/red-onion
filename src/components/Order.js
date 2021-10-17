@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import OrderMeal from './OrderMeal';
 
 const Order = () => {
+
     const [meals, setMeals] = useState([]);
     let { id } = useParams();
 
@@ -15,14 +16,20 @@ const Order = () => {
     }, []);
 
     return (
-        <div>
 
-            {
-                meals.filter(meal => meal.id == id).map(meal => <OrderMeal meal={meal} />)
-            }
+        <>
 
-        </div>
+            <div>
+
+                {
+                    meals.filter(meal => meal.id == id).map(meal => <OrderMeal meal={meal} />)
+                }
+
+            </div>
+
+        </>
     );
+
 };
 
 export default Order;

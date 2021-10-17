@@ -3,18 +3,23 @@ import '../styles/Home.css';
 
 const Home = () => {
     return (
-        <div className="bg-yellow-100">
 
-            <div className="bg-img flex items-center">
+        <>
 
-                <div className="flex flex-col items-center container">
+            <div className="bg-yellow-100">
 
-                    <h1 className="text-4xl text-center md:text-6xl mb-10">Best Food Wating For Your Belly</h1>
+                <div className="bg-img flex items-center">
 
-                    <div className="w-full md:w-5/12 flex justify-between bg-white rounded-full">
+                    <div className="flex flex-col items-center container">
 
-                        <input type="text" className="search" placeholder="Food Name" />
-                        <button className="btn">Search</button>
+                        <h1 className="text-4xl text-center md:text-6xl mb-10">Best Food Wating For Your Belly</h1>
+
+                        <div className="w-full md:w-5/12 flex justify-between bg-white rounded-full">
+
+                            <input type="text" className="search" placeholder="Food Name" />
+                            <button className="btn">Search</button>
+
+                        </div>
 
                     </div>
 
@@ -22,7 +27,8 @@ const Home = () => {
 
             </div>
 
-        </div>
+        </>
+
     );
 };
 

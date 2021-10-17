@@ -11,6 +11,7 @@ import Order from './components/Order';
 import Checkout from './components/Checkout';
 import AuthProvider from './context/AuthProvider';
 import OrderProvider from './context/OrderProvider';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
 
@@ -38,21 +39,19 @@ function App() {
 								<Login />
 							</Route>
 
-							<Route exact path="/order/:id">
+							<PrivateRoute exact path="/order/:id">
 								<Order />
-							</Route>
+							</PrivateRoute>
 
-							<Route exact path="/checkout">
+							<PrivateRoute exact path="/checkout">
 								<Checkout />
-							</Route>
+							</PrivateRoute>
 
 							<Route exact path="*">
 								<NotFound />
 							</Route>
 
 						</Switch>
-
-
 
 					</OrderProvider>
 

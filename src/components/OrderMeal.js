@@ -30,7 +30,8 @@ const OrderMeal = ({ meal }) => {
     const { handleClick } = useOrder();
 
     return (
-        <div>
+
+        <>
 
             <div className="container ">
 
@@ -87,7 +88,7 @@ const OrderMeal = ({ meal }) => {
 
             </div>
 
-        </div>
+        </>
     );
 };
 

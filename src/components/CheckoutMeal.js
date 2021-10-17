@@ -7,7 +7,7 @@ const CheckoutMeal = ({ item, handleDelete }) => {
 
     return (
 
-        <div>
+        <>
 
             <div className="grid grid-cols-1">
 
@@ -41,7 +41,7 @@ const CheckoutMeal = ({ item, handleDelete }) => {
 
             </div>
 
-        </div>
+        </>
 
     );
 };
